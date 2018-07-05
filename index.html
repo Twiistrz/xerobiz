@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Xerobiz - Coming Soon</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/applify.min.css"/>
+	<link rel="stylesheet" href="assets/css/fontawesome-all.css"/>
+</head>
+<body class="coming-soon">
+
+	<!-- Main Wrapper -->
+    <div class="main" role="main">
+   	
+    	<!-- UI Hero -->
+		<div class="ui-hero hero-sm hero-center ui-tilt ui-gradient-animator">
+			<div class="container">
+			
+				<!-- UI App Icon -->
+				<div class="ui-app-icon">
+					<img src="assets/img/logo/xerobiz-icon.svg" alt="Xerobiz Printing Services" data-uhd>
+				</div>
+
+				<!-- Heading -->
+				<h1 class="heading">
+					We are Launching Soon
+				</h1>
+				<p class="paragraph">
+					Welcome to Xerobiz printing services.
+				</p>
+				
+				<div class="ui-counter" data-launch="July 09, 2018 08:00:00">
+					<!-- Days -->
+					<div class="days">
+						<h3 class="value">0</h3>
+						<p class="label">Days</p>
+					</div><!-- Hours -->
+					<div class="hours">
+						<h3 class="value">0</h3>
+						<p class="label">Hours</p>
+					</div><!-- Minutes -->
+					<div class="minutes">
+						<h3 class="value">0</h3>
+						<p class="label">Minutes</p>
+					</div><!-- Seconds -->
+					<div class="seconds">
+						<h3 class="value">0</h3>
+						<p class="label">Seconds</p>
+					</div>
+				</div>
+   				
+			</div><!-- .container -->
+		</div><!-- .ui-hero -->
+
+		<div class="section section-sm">
+			<div class="actions text-center">
+				<a href="https://www.facebook.com/xerobiz.thevillage/" class="btn ui-gradient-blue btn-circle shadow-md" target="_blank">
+					<span class="fab fa-facebook-f"></span>
+				</a>
+				<a href="mailto:xerobiz.thevillage@gmail.com" class="btn ui-gradient-peach btn-circle shadow-md">
+					<span class="far fa-envelope"></span>
+				</a>
+			</div>
+		</div>
+
+    </div><!-- .main -->
+    
+    <!-- Scripts -->
+	<script type="text/javascript" src="assets/js/libs/jquery/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/libs/bootstrap.js"></script>
+	<script type="text/javascript" src="assets/js/applify/build/applify.js"></script>
+	<!-- UI Counter JS -->
+	<script>
+       // Get The Launch Date
+       var launch_date = new Date($('.ui-counter').data('launch')).getTime();
+       // Update Every Second
+       var i = setInterval(function() {
+           // The Current Timestamp
+           var time_stamp = new Date().getTime();
+           // Calculate Time Left
+           var time_left = launch_date - time_stamp;
+           // Calculations
+           var days = Math.floor(time_left / (1000 * 60 * 60 * 24));
+           var hours = Math.floor((time_left % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+           var minutes = Math.floor((time_left % (1000 * 60 * 60)) / (1000 * 60));
+           var seconds = Math.floor((time_left % (1000 * 60)) / 1000);
+           // Add Text To Html
+           $('.days .value').text(days);
+           $('.hours .value').text(hours);
+           $('.minutes .value').text(minutes);
+           $('.seconds .value').text(seconds);
+           // If Launcher Is Finished
+           if (time_left < 0) {
+               clearInterval(i);
+               $('.days .value, .hours .value, .minutes .value, .seconds .value').text('00');
+           }
+       }, 1000);
+	</script>
+</body>
+</html>
