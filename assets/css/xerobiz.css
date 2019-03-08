@@ -1,0 +1,183 @@
+/*
+!!!
+    * Base Color       : #0096e3 
+    * Base Text Color  : #0295e2
+    * Text w/ light bg : #4d4d4d
+    * Hover            : #fdc82f
+!!! 
+*/
+
+
+/** DEFAULT **/
+.logo-default {
+    opacity: 1 !important;
+}
+
+.xerobiz__bg-blue {
+    background: #0096e3 !important;
+    color: #fff !important;
+}
+
+.xerobiz__text-blue {
+    color: #0295e2 !important;
+}
+
+/** NAVBAR **/
+.navbar.xerobiz__bg-blue:not(.transparent) {
+    -webkit-box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+.navbar.xerobiz__bg-blue .nav > li > a {
+    color: #fff;
+}
+
+.navbar.xerobiz__bg-blue .nav > li > a:hover, 
+.navbar.xerobiz__bg-blue .nav > li > a:active, 
+.navbar.xerobiz__bg-blue .nav > li.active > a {
+    color: #fdc82f;
+}
+
+.navbar.xerobiz__bg-blue .nav > li > a,
+.navbar.xerobiz__bg-blue .btn {
+    letter-spacing: 0;
+    font-weight: bold !important;
+    font-size: 16px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.navbar.xerobiz__bg-blue .btn {
+    color: #0295e2 !important;
+    padding: 11px 35px;
+}
+
+.navbar.xerobiz__bg-blue:not(.transparent) .btn {
+    color: #fff !important;
+}
+
+.navbar.xerobiz__bg-blue:not(.transparent) .btn:hover {
+    background: #fff;
+    color: #0295e2 !important;
+}
+
+/** UI HERO **/
+.main .ui-hero h1.heading {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2em;
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 40px;
+    color: #fff;
+}
+
+.main .ui-hero p.paragraph {
+    text-align: center;
+    padding: 0 0 0 0;
+    font-size: 15px;
+    line-height: 29.82px;
+    color: #fff;
+    letter-spacing: 0.08em;
+}
+
+/** SERVICES **/
+.main #services h1.heading {
+    color: #0295e2;
+    text-transform: uppercase;
+}
+
+.main #services h4 {
+    margin-bottom: 12px;
+    line-height: 25px;
+    font-size: 23.34px;
+    font-weight: 700;
+    color: #0295e2;
+    text-transform: uppercase;
+}
+
+.main #services p {
+    text-align: center;
+    padding: 0 0 0 0;
+    font-size: 15px;
+    line-height: 29.82px;
+    color: #4d4d4d;
+    letter-spacing: 0.08em;
+}
+
+/** ABOUT **/
+.main #about h1.heading {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.main #about p {
+    text-align: center;
+    padding: 0 0 0 0;
+    font-size: 15px;
+    line-height: 29.82px;
+    color: #fff;
+    letter-spacing: 0.08em;
+}
+
+/** PRICING **/
+.main #pricing h1.heading {
+    color: #0295e2;
+    text-transform: uppercase;
+}
+
+.main #pricing .xerobiz__bg-blue h4,
+.main #pricing .xerobiz__bg-blue h6 {
+    color: #fff;
+}
+
+.main #pricing h4 {
+    text-transform: uppercase
+}
+
+.main #pricing h6 {
+    text-align: center;
+    padding: 0 0 0 0;
+    font-size: 15px;
+    line-height: 29.82px;
+    letter-spacing: 0.08em;
+}
+
+/** CONTACT **/
+.main #contact h1.heading {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.main #contact li {
+    padding: 0 0 2.667em 0;
+    padding-bottom: 0;
+    letter-spacing: 0.2em;
+    font-size: 11.6667px;
+    line-height: 25px;
+}
+
+.main #contact li > a {
+    color: #fff;
+}
+
+.main #contact li > a:hover {
+    color: #fdc82f;
+}
+
+/** FOOTER **/
+.xerobiz__footer {
+    background: #272727;
+    color: #5b5b5b;
+}
+
+.xerobiz__footer p {
+    font-size: 10.333px !important;
+    line-height: 0.5em;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+}
