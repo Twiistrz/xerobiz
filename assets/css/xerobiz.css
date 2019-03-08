@@ -24,22 +24,22 @@
 
 /** NAVBAR **/
 .navbar.xerobiz__bg-blue:not(.transparent) {
-    -webkit-box-shadow: 0 0 8px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0 0 8px rgba(0,0,0,0.3);
-    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
-.navbar.xerobiz__bg-blue .nav > li > a {
+.navbar.xerobiz__bg-blue .nav>li>a {
     color: #fff;
 }
 
-.navbar.xerobiz__bg-blue .nav > li > a:hover, 
-.navbar.xerobiz__bg-blue .nav > li > a:active, 
-.navbar.xerobiz__bg-blue .nav > li.active > a {
+.navbar.xerobiz__bg-blue .nav>li>a:hover,
+.navbar.xerobiz__bg-blue .nav>li>a:active,
+.navbar.xerobiz__bg-blue .nav>li.active>a {
     color: #fdc82f;
 }
 
-.navbar.xerobiz__bg-blue .nav > li > a,
+.navbar.xerobiz__bg-blue .nav>li>a,
 .navbar.xerobiz__bg-blue .btn {
     letter-spacing: 0;
     font-weight: bold !important;
@@ -161,11 +161,15 @@
     line-height: 25px;
 }
 
-.main #contact li > a {
+.main #contact li>i {
+    margin-right: 14px;
+}
+
+.main #contact li>a {
     color: #fff;
 }
 
-.main #contact li > a:hover {
+.main #contact li>a:hover {
     color: #fdc82f;
 }
 
