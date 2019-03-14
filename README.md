@@ -1,2 +1,2 @@
-# xerobiz.github.io
-v2 on the way
+# Xerobiz
+Official Website of Xerobiz Printing Services
